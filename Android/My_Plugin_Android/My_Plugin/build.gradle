@@ -1,0 +1,52 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        minSdkVersion 11
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+}
+
+android.libraryVariants.all { variant ->
+
+    // Task names.
+    String variantName = "${variant.name.capitalize()}"; // Like 'Debug'
+    String deployTaskGroup = "plugin";
+    String deployTaskName = "deploy${variantName}PluginArchive"; // Like 'deployDebugPluginArchive'
+    String dependencyTaskName = "assemble${variantName}"; // Like 'assembleDebug'
+
+    // Source.
+    String sourceAARFolder = "${buildDir.getPath()}/outputs/aar/";
+    String sourceAARName = "${project.name}-${variant.name}.aar";
+
+    // Target.
+    String targetAssetFolder = "Assets/Plugins/My Plugin";
+    String targetAARFolder = "${rootDir.getPath()}/../../${targetAssetFolder}"; // Navigate into 'Assets'
+    String targetAARName = "My Plugin Android.aar"; // The form you ship your plugin
+
+    // Create task.
+    task(deployTaskName, dependsOn: dependencyTaskName, type: Copy) {
+                logger.lifecycle("${variant.name.capitalize()} AAR Folder: ${sourceAARFolder}")
+                logger.lifecycle("${variant.name.capitalize()} Target AAR Folder: ${targetAARFolder}")
+                logger.lifecycle("${variant.name.capitalize()} Target AAR name: ${targetAARName}")
+
+                from(sourceAARFolder)
+                into(targetAARFolder)
+                include(sourceAARName)
+                rename(sourceAARName, targetAARName)
+            }.group = deployTaskGroup;
+}

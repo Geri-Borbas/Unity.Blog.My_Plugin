@@ -1,0 +1,3 @@
+Unity native plugin (iOS / Android) Hello World! example project. More on [**Unity Android Plugin Tutorial 2.** Project setup and workflow](http://eppz.eu/blog/unity-android-plugin-tutorial-2/).
+
+To start inspect files just start with `Assets/Scene.unity` scene. Note that the iOS / Android **plugin projects also included** in the project root in their respective folders ([Xcode](https://developer.apple.com/xcode/) project is at `iOS/EPPZ_Alert_iOS`, [Android Studio](http://developer.android.com/tools/studio/index.html) project is at `Android/EPPZ_Alert_Android`).

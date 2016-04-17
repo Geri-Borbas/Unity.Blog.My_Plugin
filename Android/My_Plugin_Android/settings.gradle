@@ -1,0 +1,1 @@
+include ':My_Plugin', ':My_Plugin', ':My_Plugin'
