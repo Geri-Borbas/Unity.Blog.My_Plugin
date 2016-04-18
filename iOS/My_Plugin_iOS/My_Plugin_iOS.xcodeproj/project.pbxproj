@@ -1,0 +1,260 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		555A77621CC5772300D8D415 /* My_Plugin_C.mm in Sources */ = {isa = PBXBuildFile; fileRef = 555A77611CC5772300D8D415 /* My_Plugin_C.mm */; };
+		555A77651CC5774800D8D415 /* UnityString.m in Sources */ = {isa = PBXBuildFile; fileRef = 555A77641CC5774800D8D415 /* UnityString.m */; };
+		555A77661CC5783800D8D415 /* My Plugin iOS.a in CopyFiles */ = {isa = PBXBuildFile; fileRef = 555A77551CC576DB00D8D415 /* My Plugin iOS.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		555A77531CC576DB00D8D415 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "${SRCROOT}/../../Assets/Plugins/My Plugin";
+			dstSubfolderSpec = 0;
+			files = (
+				555A77661CC5783800D8D415 /* My Plugin iOS.a in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		555A77551CC576DB00D8D415 /* My Plugin iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "My Plugin iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		555A77611CC5772300D8D415 /* My_Plugin_C.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = My_Plugin_C.mm; sourceTree = "<group>"; };
+		555A77641CC5774800D8D415 /* UnityString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnityString.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		555A77521CC576DB00D8D415 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		555A774C1CC576DB00D8D415 = {
+			isa = PBXGroup;
+			children = (
+				555A77571CC576DB00D8D415 /* My_Plugin_iOS */,
+				555A77561CC576DB00D8D415 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		555A77561CC576DB00D8D415 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				555A77551CC576DB00D8D415 /* My Plugin iOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		555A77571CC576DB00D8D415 /* My_Plugin_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				555A77611CC5772300D8D415 /* My_Plugin_C.mm */,
+				555A77641CC5774800D8D415 /* UnityString.m */,
+			);
+			path = My_Plugin_iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		555A77541CC576DB00D8D415 /* My_Plugin_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 555A775E1CC576DB00D8D415 /* Build configuration list for PBXNativeTarget "My_Plugin_iOS" */;
+			buildPhases = (
+				555A77511CC576DB00D8D415 /* Sources */,
+				555A77521CC576DB00D8D415 /* Frameworks */,
+				555A77531CC576DB00D8D415 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = My_Plugin_iOS;
+			productName = My_Plugin_iOS;
+			productReference = 555A77551CC576DB00D8D415 /* My Plugin iOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		555A774D1CC576DB00D8D415 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "eppz!";
+				TargetAttributes = {
+					555A77541CC576DB00D8D415 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 555A77501CC576DB00D8D415 /* Build configuration list for PBXProject "My_Plugin_iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 555A774C1CC576DB00D8D415;
+			productRefGroup = 555A77561CC576DB00D8D415 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				555A77541CC576DB00D8D415 /* My_Plugin_iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		555A77511CC576DB00D8D415 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				555A77621CC5772300D8D415 /* My_Plugin_C.mm in Sources */,
+				555A77651CC5774800D8D415 /* UnityString.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		555A775C1CC576DB00D8D415 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		555A775D1CC576DB00D8D415 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		555A775F1CC576DB00D8D415 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = "";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "My Plugin iOS";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		555A77601CC576DB00D8D415 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = "";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "My Plugin iOS";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		555A77501CC576DB00D8D415 /* Build configuration list for PBXProject "My_Plugin_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				555A775C1CC576DB00D8D415 /* Debug */,
+				555A775D1CC576DB00D8D415 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		555A775E1CC576DB00D8D415 /* Build configuration list for PBXNativeTarget "My_Plugin_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				555A775F1CC576DB00D8D415 /* Debug */,
+				555A77601CC576DB00D8D415 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 555A774D1CC576DB00D8D415 /* Project object */;
+}
